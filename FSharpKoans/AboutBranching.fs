@@ -73,7 +73,7 @@ module ``about branching`` =
         let getDinner x =
             match x with
             | (name, "veggies")
-            | (name, "fish")
+            | (name, "fish") -> sprintf "%s doesn't want red meat" name
             | (name, foodChoice) -> sprintf "%s wants 'em some %s" name foodChoice 
             
         let person1 = ("Bob", "fish")
